@@ -33,20 +33,7 @@ background-color: #11636a!important;
 	border-bottom:solid 2px rgb(252, 59, 59);
 	margin-bottom:1%;
 }
-.list{
-  padding-left:80px;
-  color: black!important;
-  margin-top:14px;
-  float: right;
-  cursor: pointer;
-}
-.unlist{
-  padding-left:120px;
-  color: black!important;
-  margin-top:14px;
-  float:right;
-  cursor: pointer;
-}
+
 .starter-template{
 text-align: center;
 background:linear-gradient(rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.7)),url("../../images/1-8.jpg");
@@ -54,6 +41,7 @@ background-size: cover;
 color:white;
 background-position: center;
 height: 650px;
+width: cover;
 padding:120px;
 }
 
@@ -66,8 +54,76 @@ b{
 .container{
   background-size:cover!important;
   padding: 10px;
+
 }
 .jumbotron{
   background-size:cover!important;
   padding: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 10%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.tbody{
+  width:75%;
+}
+.right {
+  float: left;
+  width: 50%; 
+  margin-top: 7px;
+}
+#table-wrapper {
+  position:relative;
+
+}
+#table-scroll {
+  height:650px;
+  overflow:auto;  
+}
+video{
+  padding:10px;
+}
+
+.button {
+  background-color: rgb(50, 143, 206);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
