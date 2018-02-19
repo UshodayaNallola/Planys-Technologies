@@ -7,6 +7,8 @@ html(lang='en')
     title Planys Technologies
     link(href='../../stylesheets/bootstrap.css', rel='stylesheet')
     link(href='../../stylesheets/style.css', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='javascripts/bootstrap.js')
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container
@@ -50,10 +52,12 @@ html(lang='en')
         p.lead
           b 24×7 Operations
           | Planys ROVs have unlimited endurance and can operate efficiently for prolonged periods
-  section
+section
+  a(name='cad')
   .container-fluid
   h1.text-center Why PLANYS?
-  p Planys services offer high value proposition & provide unmatched customer experience
+  p
+    | Planys services offer high value proposition & provide unmatched customer experience
   .row
     .col-xs-8.col-md-10
       img(src='../../images/7_n.jpg', style='width:100%')
@@ -70,25 +74,184 @@ html(lang='en')
               h2 Quick Deployment
               p
                 | Planys ROVs are highly portable and require minimal support systems for launch and recovery
-            
-    section
+section
+  a(name='inspect')
+  h2.text-center Inspection Videos
+  .container-fluid
+    video(width='400', controls='')
+      source(src='../../assets/ceo.mp4', type='video/mp4')
+    video(width='400', controls='')
+      source(src='../../assets/sb.mp4', type='video/mp4')
+    video(width='400', controls='')
+      source(src='../../assets/rudder.mp4', type='video/mp4')
+    video(width='400', controls='')
+      source(src='../../assets/mike.mp4', type='video/mp4')
+    video(width='400', controls='')
+      source(src='../../assets/hull.mp4', type='video/mp4')
+    video(width='400', controls='')
+      source(src='../../assets/cat.mp4', type='video/mp4')
+
     
-    h2.text-center Inspection Videos
-    .container-fluid
-      //- video#videoPlayer(controls='')
-      //-   source(src='https://www.youtube.com/watch?v=AMUny3GtdpA', type='video/mp4')
-      video(width='400', controls='')
-        source(src='../../assets/ceo.mp4', type='video/mp4')
-      video(width='400', controls='')
-        source(src='../../assets/sb.mp4', type='video/mp4')
-      video(width='400', controls='')
-        source(src='../../assets/rudder.mp4', type='video/mp4')  
-      video(width='400', controls='')
-       source(src='../../assets/mike.mp4', type='video/mp4')
-      video(width='400', controls='')
-       source(src='../../assets/hull.mp4', type='video/mp4')
-      video(width='400', controls='')
-       source(src='../../assets/cat.mp4', type='video/mp4')
-       
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-    script(src='javascripts/bootstrap.js')
+section
+  a(name='observation')
+  .container-fluid
+    .row
+      .col-6
+        h2.text-center Observations
+        #piechart.text-center
+        script(type='text/javascript', src='https://www.gstatic.com/charts/loader.js')
+        script(type='text/javascript').
+          // Load google charts
+          google.charts.load('current', { 'packages': ['corechart'] });
+          google.charts.setOnLoadCallback(drawChart);
+          // Draw the chart and set the chart values
+          function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+          ['Task', 'Work per Day'],
+          ['Team Work', 8],
+          ['Total Team', 8],
+          ['Average of Team work', 8]
+          ]);
+          // Optional; add a title and set the width and height of the chart
+          var options = {
+          'title': 'Planys Techologies', 'width': 550, 'height': 400, title: 'Planys Technologies Work',
+          colors: ['#12b2c8', '#043c43', '#8c8c8c']
+          };
+          // Display the chart inside the <div> element with id="piechart"
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+          chart.draw(data, options);
+          }
+      .col-6
+        #iechart.text-center
+        script(type='text/javascript', src='https://www.gstatic.com/charts/loader.js')
+        script(type='text/javascript').
+          // Load google charts
+          google.charts.load('current', { 'packages': ['corechart'] });
+          google.charts.setOnLoadCallback(drawChart);
+          // Draw the chart and set the chart values
+          function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+          ['Rating', 'Rank'],
+          ['Rank', 8],
+          ['LOP', 8],
+          ['WOP', 8]
+          ]);
+          // Optional; add a title and set the width and height of the chart
+          var options = {
+          'title': 'Planys Techologies', 'width': 550, 'height': 400, title: 'Work Analysis',
+          colors: ['#196a76', '#042028', '#149cac']
+          };
+          // Display the chart inside the <div> element with id="piechart"
+          var chart = new google.visualization.PieChart(document.getElementById('iechart'));
+          chart.draw(data, options);
+          }
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

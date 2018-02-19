@@ -29,7 +29,7 @@ background-color: #11636a!important;
   margin-top:1%;
 }
 .list>li>a:hover{
-	color: #24A1F0;01
+	color: #24A1F0;
 	border-bottom:solid 2px rgb(252, 59, 59);
 	margin-bottom:1%;
 }
@@ -110,7 +110,9 @@ video{
   margin: 4px 2px;
   cursor: pointer;
 }
-
+{
+  border-color: black;
+}
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
